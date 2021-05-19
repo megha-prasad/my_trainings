@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multiplication</title>
+        <style>
+            h1{text-align: center; border: 3px solid #CE5937; background-color:#EFDECD ; text-shadow: 1px 2px 2px #CE5937;}
+            body{background-color:#FDECDF;}
+        </style>
+        <hr size=2 noshade>
+        <h1>Multiplication</h1>
+        <hr size = 2 noshade>
+    </head>
+    <body>
+        <center>
+        <h3><a href = "http://localhost:5000/">HOME</a></h3>
+        <form action="/multiplication" method="POST">
+            <table>
+                <tr>
+                    <td>Enter first number:</td>
+                    <td><input type="number" name="f.no" id=f.no></td>
+                </tr>
+                <tr>
+                    <td>Enter second number:</td>
+                    <td><input type="number" name="s.no" id=s.no><br></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">MULTIPLY</button><br></td>
+                </tr>
+                <tr>
+                    <td>Result:</td>
+                    <td><label>{{result}}</label></td>
+                </tr>
+            </table>
+        </form>
+        </center>
+
+
+    </body>
+</html>

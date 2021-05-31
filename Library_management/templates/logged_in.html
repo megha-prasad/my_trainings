@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Libray Management</title>
+    <style>
+    h2{text-align: center; border: 3px solid #CE5937; background-color:#EFDECD ; text-shadow: 1px 2px 2px #CE5937;}
+    body{background-color:#FDECDF;}
+    </style>
+    <hr size=3 noshade>
+    <h2>YOUR HOME</h2>
+    <hr size=3 noshade>
+  </head>
+  <body>
+    {%if current_user.userrole=='admin'%}
+    <ul>
+    <h3><a href = "/search"><li>Search books</li></a></h3>
+    <h3><a href = "/update"><li>Update books</li></a></h3>
+    <h3><a href = "/delete"><li>Delete books</li></a></h3>
+    <h3><a href = "/add"><li>Add books</li></a></h3>
+    <h3><a href = "/fullbooks"><li>Find all books</li></a></h3>
+    <h3><a href="/"><li>log out</li></a></h3>
+    </ul>
+    {% endif %}
+    {% if current_user.userrole=='user'%}
+    <ul>
+    <h3><a href = "/search"><li>Search books</li></a></h3>
+    <h3><a href = "/fullbooks"><li>Find all books</li></a></h3>
+    <h3><a href = "/borrowbooks"><li>Add to cart</li></a></h3>
+    <h3><a href = "/borrowedbooks"><li>Your cart</li></a></h3>
+    <h3><a href="/"><li>log out</li></a></h3>
+    </ul>
+    {% endif %}
+  </body>
+</html>

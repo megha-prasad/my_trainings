@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Library Management</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+        <style>
+            table, th, td {border: 1px solid rgb(7, 7, 7);border-collapse: collapse;}
+            th, td {padding: 5px;}
+            table {border-spacing: 15px;}
+            th {text-align: center;}
+            table {width: 100%; background-color: #ddc5bf;}
+        </style>
+    </head>
+    <body  style="background-color:rgb(204, 184, 184);">
+        <center><h3><strong>BOOKS IN YOUR CART</strong> </h3></center>
+            <table style="width:100%">
+                <caption>CART</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">BOOK NAME</th>
+                        <th scope="col">AUTHOR</th>
+                        <th scope="col">ISSUED DATE</th>
+                    </tr>
+                </thead>
+                {% for items in new %}
+                <tbody>
+                    <tr>
+                        <td class="name-row">{{items.bookname}}</td>
+                        <td class="name-row">{{items.author}}</td>
+                        <td class="name-row">{{items.issued_on}}</td>
+                    </tr>
+                </tbody>
+                {% endfor %}
+            </table>
+            <h3><a href="/logged_in"><li>Back to home</li></a></h3>
+    </body>
+</html>

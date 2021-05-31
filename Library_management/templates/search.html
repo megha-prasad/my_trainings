@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Library Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body  style="background-color:rgb(238, 179, 175);">
+    <div class="container">
+        <br>
+        <form action="/search" method="post">
+            <label>BOOK NAME: </label>
+            <input type="text" placeholder="bookname" name="bookname"><br>
+            <input type="submit" value="SEARCH"> <br>
+            <label>RESULT: {{books}}</label>
+        </form>
+        <h3><a href="/logged_in"><li>Back to home</li></a></h3>
+        <h3><a href="/"><li>log out</li></a></h3>
+
+    </div>
+</body>

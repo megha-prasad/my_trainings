@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Library Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body  style="background-color:rgb(238, 179, 175);">
+    <h3>Enter details :</h3> 
+    <form action="/update" method="post">
+    <label>Enter book id:</label>
+    <input type="text" placeholder="book_id" name="book_id"><br>
+    <label>Book Name</label>
+    <input type="text" placeholder="newbookname" name="newbookname"><br>
+    <label>Author Name</label>
+    <input type="text" placeholder="newauthor" name="newauthor"><br>
+    <label>serial no:</label>
+    <input type="text" placeholder="serialno" name="serialno"><br>
+    <input type="submit" value="UPDATE"> <br>
+    <h3><a href="/logged_in"><li>Back to home</li></a></h3>
+    <h3><a href="/"><li>log out</li></a></h3>
+  </form>
+</body>
